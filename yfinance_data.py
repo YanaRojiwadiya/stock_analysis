@@ -11,7 +11,8 @@ class Yfinance:
         return self.ticker.history(period=period, interval=interval)
 
     def get_stock_earning_date(self):
-        return self.ticker.calendar['Earnings Date']
+        earning_dates = self.ticker.calendar['Earnings Date']
+        return [date.strftime("%d %B %Y") for date in earning_dates]
 
     def get_stock_news(self):
         return self.ticker.news

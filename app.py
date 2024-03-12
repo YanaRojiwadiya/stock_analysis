@@ -10,16 +10,16 @@ app.layout = html.Div([
     dcc.Dropdown(
         id='time-range-dropdown',
         options=[
-            {'label': '1D', 'value': '1D'},
-            {'label': '5D', 'value': '5D'},
-            {'label': '1M', 'value': '1M'},
-            {'label': '3M', 'value': '3M'},
-            {'label': '6M', 'value': '6M'},
-            {'label': 'YTD', 'value': 'YTD'},
-            {'label': '1Y', 'value': '1Y'},
-            {'label': '2Y', 'value': '2Y'},
-            {'label': '5Y', 'value': '5Y'},
-            {'label': 'MAX', 'value': 'MAX'}
+            {'label': '1D', 'value': '1d'},
+            {'label': '5D', 'value': '5d'},
+            {'label': '1M', 'value': '1m'},
+            {'label': '3M', 'value': '3m'},
+            {'label': '6M', 'value': '6m'},
+            {'label': 'YTD', 'value': 'ytd'},
+            {'label': '1Y', 'value': '1y'},
+            {'label': '2Y', 'value': '2y'},
+            {'label': '5Y', 'value': '5y'},
+            {'label': 'MAX', 'value': 'max'}
         ],
         value='1D',
         style={'width': '80px', 'margin-right': '10px'}
