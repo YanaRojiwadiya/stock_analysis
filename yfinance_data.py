@@ -17,17 +17,17 @@ class Yfinance:
     def get_stock_news(self):
         return self.ticker.news
 
-if __name__ == "__main__":
-    yf = Yfinance('AAPL')
+# if __name__ == "__main__":
+#     yf = Yfinance('AAPL')
 
-    stock_info = yf.get_stock_info()
-    print("Stock Info:", stock_info)
+#     stock_info = yf.get_stock_info()
+#     print("Stock Info:", stock_info)
 
-    stock_data = yf.fetch_stock_data('1d', '1m')
-    print("Stock Data:", stock_data)
+#     stock_data = yf.fetch_stock_data('1d', '1m')
+#     print("Stock Data:", stock_data)
 
-    earning_date = yf.get_stock_earning_date()
-    print("Earning Date:", earning_date)
+#     earning_date = yf.get_stock_earning_date()
+#     print("Earning Date:", earning_date)
 
-    stock_news = yf.get_stock_news()
-    print("Stock News:", stock_news)
+#     stock_news = yf.get_stock_news()
+#     print("Stock News:", stock_news)
